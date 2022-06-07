@@ -11,5 +11,4 @@ import calendar.service.CalendarService;
 public class CalendarController {
 	@Autowired
 	private CalendarService calendarService;
-	
 }
