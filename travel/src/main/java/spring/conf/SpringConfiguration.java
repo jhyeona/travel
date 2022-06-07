@@ -26,9 +26,12 @@ public class SpringConfiguration {
 	public DataSource dataSource() {
 		BasicDataSource basicDataSource = new BasicDataSource();
 		basicDataSource.setDriverClassName("oracle.jdbc.driver.OracleDriver");
-		basicDataSource.setUrl("jdbc:oracle:thin:@localhost:1521:xe");
+		basicDataSource.setUrl("jdbc:oracle:thin:@dbhyuna_high?TNS_ADMIN=C:/git_home/git_travelProject");
 		basicDataSource.setUsername("ADMIN");
-		basicDataSource.setPassword("Oracle12345!!!");
+		basicDataSource.setPassword("Oracel12345!!!");		
+//		basicDataSource.setUrl("jdbc:oracle:thin:@localhost:1521:xe");
+//		basicDataSource.setUsername("C##JAVA");
+//		basicDataSource.setPassword("password");
 		basicDataSource.setMaxTotal(20);
 		basicDataSource.setMaxIdle(3);
 		
